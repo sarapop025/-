@@ -14,6 +14,7 @@ $result = $con->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ระบบ</title> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -28,7 +29,6 @@ $result = $con->query($sql);
             <th>รหัส</th>
             <th>ชื่อ</th>
             <th>นามสกุล</th>
-            
             <th>จัดการ</th>
         </tr>
 
