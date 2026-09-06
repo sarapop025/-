@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+/* ปุ่ม */
+.btn {
+    /* display: inline-block; */
+    display: inline-flex;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ตาราง */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #eee;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    color: #333;
+}
