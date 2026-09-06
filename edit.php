@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once "db.php";
 
@@ -19,12 +20,18 @@ if (isset($_POST["update"])) {
     $student_code = $_POST["student_code"];
     $fname = $_POST["firstname"];
     $lname = $_POST["lastname"];
+    $class_level = $_POST["class_level"];
+    $classroom = $_POST["classroom"];
 
     // UPDATE ข้อมูล
     $sql = "UPDATE students SET
                 student_code = '$student_code',
                 firstname = '$fname',
-                lastname = '$lname'
+                lastname = '$lname',
+                class_level = '$class_level',
+                classroom = '$classroom'
+
+
             WHERE student_id = $id";
 
     if ($con->query($sql)) {
@@ -87,6 +94,30 @@ if (isset($_POST["update"])) {
                 type="text"
                 name="lastname"
                 value="<?php echo $row["lastname"]; ?>"
+                required
+            >
+        </p>
+
+
+           <p>
+            นามสกุล
+            <br>
+            <input
+                type="text"
+                name="class_level"
+                value="<?php echo $row["class_level"]; ?>"
+                required
+            >
+        </p>
+
+
+           <p>
+            นามสกุล
+            <br>
+            <input
+                type="text"
+                name="classroom"
+                value="<?php echo $row["classroom"]; ?>"
                 required
             >
         </p>
